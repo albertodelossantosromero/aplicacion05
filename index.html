@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/histo2.jpg','imagenes/moni2.jpg','imagenes/2T.jpg','imagenes/acti.jpg','imagenes/erupp.jpg','imagenes/tierraactual.jpg','imagenes/atmosfera2.jpg','imagenes/reducir1.jpg','imagenes/reutilizar2.jpg')"><div data-role="page" id="Principal" data-theme="a" >
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>DÍA DE LA TIERRA</h1>
+   </div>
+   <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>PLANETA TIERRA</h1>
+          <div>
+          <p>El Día de la Tierra es un día celebrado en muchos países el  22 de abril.</p>       </disv>
+        <div>
+          <img src="imagenes/tierra1.jpg" width=">60%" height="60%" ></div>
+     </div>
+          </div>
+          
+       <div>  
+<br>
+</div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>FECHA DE LA CELEBRACIÓN</h2>
+   <p>Muestra información hacerca de porque se celebra.</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TAMAÑO</h2>
+<p>Muestra informacion hacerca de su tamaño.</p>
+</a>
+</li>
+<li clas="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ANTIGUEDAD</h2>
+<p>Muestra informacion hacerca de su antiguedad. </p>
+  </a>
+  </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HISTORIA</h2>
+<p>Muestra su historia o leyenda.</p>
+</a>
+</li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>CONTAMINACIÓN AL PLANETA</h2>
+    <p>Muestra informacion hacerca de efectos y causas.</p>
+    </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>CUIDADOS AL PLANETA</h2>
+    <p>Muestra su medidas para prevenir la contaminación.</p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>REFLEXIÓN PERSONAL</h2>
+    <p>Muestra comentario personal.</p>
+    </a>
+   </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+  <h4>Aplicacion cinco, ADS</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>FECHA DE CELEBRACIÓN</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+       <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+       
+       <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>¿POR QUÉ SE CELEBRA?</h1>
+          <div>
+          <p>Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.</p>       
+          </div>
+        <div>
+          <img src="imagenes/tierra2.jpg" width=">60%" height="60%" ></div>
+     </div>
+          </div>
+          </div>
+       
+      <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>¿DESDE CÚANDO SE CELEBRA?</h1>
+          <div>
+          <p> Desde 1970 cada 22 de abril se celebra el día internacional de la tierra; creado con el fin de generar participación y conciencia ambiental entre las personas, así como para apoyar los programas e iniciativas ambientales que se gestan año a año desde entonces.</p>       
+          </div>
+        <div>
+          <img src="imagenes/tierra3.jpg" width=">60%" height="60%" ></div>
+     </div>
+          </div>
+          </div>  
+       
+<div data-role="footer" data-theme="a" data-position="fixed">
+<div>
+ <h4 align="center">Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4 align="center">ALBERTO DE LOS SANTOS ROMERO </h4>
+</div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>TAMAÑO</h1>
+ </div>
+<div data-role="content" align="center">
+  <div>
+  <p>Tiene una forma cónica simétrica y la superficie terrestre o corteza está dividida en varias placas tectónicas que se deslizan sobre el magma durante periodos de varios millones de años. La superficie está cubierta por continentes e islas, estos poseen varios lagos, ríos y otras fuentes de agua, que junto con los océanos de agua salada que representan cerca del 71 % de la superficie construyen la hidrósfera. No se conoce ningún otro planeta con este equilibrio de agua líquida, que es indispensable para cualquier tipo de vida conocida. Los polos de la Tierra están cubiertos en su mayoría de hielo sólido (Indlandsis de la Antártida) o de banquisas (casquete polar ártico). El interior del planeta esgeológicamente activo, con una gruesa capa de manto relativamente sólido, un núcleo externo líquido que genera un campo magnético, y un núcleo de hierro sólido interior aproximadamente del 88 %.</p>
+  <p>    <img src="imagenes/atmosfera2.jpg" width="259" height="194" alt="VISTATIERRA"></p>
+  </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+     </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>ANTIGUEDAD</h1>
+  </div>
+<div data-role="content" align="center">
+<div>
+ <p>La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de años después. Es el hogar de millones de especies, incluyendo los seres humanos y actualmente el único cuerpo astronómico donde se conoce la existencia de vida. La atmósfera y otras condiciones abióticas han sido alteradas significativamente por la biosfera del planeta, favoreciendo la proliferación de organismos aerobios, así como la formación de una capa de ozono que junto con el campo magnético terrestre bloquean la radiación solar dañina, permitiendo así la vida en la Tierra. Las propiedades físicas de la Tierra, la historia geológica y su órbita han permitido que la vida siga existiendo. Se estima que el planeta seguirá siendo capaz de sustentar vida durante otros 500 millones de años, ya que según las previsiones actuales, pasado ese tiempo la creciente luminosidad del Sol terminará causando la extinción de la biosfera.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('TIERRA','','imagenes/tierraactual.jpg',1)"><img src="imagenes/tierraantigua.jpg" width="189" height="267" id="TIERRA"></a> </div>
+  </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>HISTORIA</h1>
+  </div>
+  <div data-role="content" align="center">
+ <div>
+ <p>La tierra es una historia de la mitologia mexica que cuenta con multiples versiones, todas ellas buscan dar explicación a la presencia de los volcanes TIERRA. Tiempo después el guerrero regresó con la cabeza de su rival sangrando en su lanza, por lo que recibió un festín por su victoria. Sin embargo, su amor se dio por acabado ya que la princesa había muerto. Con el corazón roto llevó el cuerpo de su amada a un monte y los dioses la convirtieron en volcán inactivo. Después, el guerrero tomó una antorcha y prometió que ningún huracán por más fuerte que llevara sus aguas apagaría el fuego con el que vela el cuerpo de su amada. Por esto, los dioses le entregaron la eternidad convirtiéndolo.
+</p> 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('TIERRAS','','imagenes/atmosfera2.jpg',1)"><img src="imagenes/atmosfera.jpg" alt="TIERRAS" width="268" height="188" id="TIERRAS"></a> </div>
+   </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+   </div>
+  </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>CONTAMINACION AL PLANETA</h1> </div>
+ <div data-role="content" align="center">
+<div>
+<p>En la actualidad es un tema con una gran seriedad ya que aumenta, tiene las causas y efectos que provocan la contaminación</p>
+
+<!-- Start WOWSlider.com -->
+<iframe src="visor2/indexwow.html" style="width:700px;height:100px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+<div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>Las principales causas de la contaminación son:</h1>
+          <div>
+              <p align="justify"> Las principales causas de la contaminación son:
+  <ul>
+  <li>El tráfico rodado</li>
+   <li>Las construcciones y las demoliciones.</li>
+   <li>Los Combustibles fósiles.</li>
+   <li>El índice de población mundial ha crecido a distinto ritmo que la tasa de mortalidad,     industrias y la falta de control ambiental.</li>
+   <li>La deforestación.</li>
+	<li> Los pesticidas y los productos químicos</li>
+  </ul>
+</p> 
+          </div>
+          </div>
+          </div>  
+  
+  <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>Principales Efectos.</h1>
+          <div>
+             <p>Los efectos se manifiestan por las alteraciones en los ecosistemas; en la generación y propagación de enfermedades en los seres vivos, muerte masiva y, en casos extremos, la desaparición de especies animales y vegetales; inhibición de sistemas productivos y, en general, degradación de la calidad de vida (salud, aire puro, agua limpia, recreación, disfrute de la naturaleza, etc.).</p>
+          </div>
+          </div>
+          </div> 
+ 
+  
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>CUIDADOS AL PLANETA</h1>
+ </div>
+ <div data-role="content" align="center">
+<div>
+<P>El cuidado de la Tierra se puede tomar como el cuidado del suelo vivo. El estado del suelo suele ser la mejor medida de la salud y el bienestar de la sociedad. Hay muchas buenas técnicas para cuidar el suelo, pero el mejor método para ver si el suelo está sano es ver cuanta vida crece ahí. Una regla que podemos hacer en nuestra casa es la regla de las 3R.
+</P>
+
+<div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>REDUCIR</h1>
+          <div>
+             <p align="justify">Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería:
+             <ul>
+             	<li>Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).</li>
+				<li>Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga).</li>
+				<li>Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.</li>
+                </ul>
+                <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Reducir','','imagenes/reducir1.jpg',1)"><img src="imagenes/reducir2.jpg" alt="reduciendo" width="259" height="194" id="Reducir"></a>
+</p>
+          </div>
+          </div>
+          </div> 
+          
+          <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>REUTILIZAR</h1>
+          <div>
+             <p align="justify">Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.
+Ejemplos: Utilizar la otra cara de las hojas impresas, rellenar botellas.</p>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/reutilizar2.jpg',1)"><img src="imagenes/reutilizar1.jpg" width="260" height="194" id="Image16"></a> </div>
+          </div>
+          </div>
+           
+          <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>RECICLAR</h1>
+          <div>
+             <p align="justify">Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero nobiodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.
+Ejemplo: El vidrio y la mayoría de plásticos se pueden reciclar calentándolos hasta que se funden y dándoles una nueva forma. Es como utilizar algo de su principio, aunque la eficiencia no es del cien por cien en general. En el caso del vidrio en concreto, sí es completamente reciclable: de una botella se podría obtener otra botella.</p>
+          </div>
+          </div>
+          </div> 
+
+<!-- Start WOWSlider.com -->
+<iframe src="visor3/indexwow.html" style="width:700px;height:100px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <h4>Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>RFLEXIÓN PERSONAL</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:700px;height:100px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+     <p>No podemos segui lastimando a quien nos mantiene con vida, que nuestro amor sea para la tierra también.</p>
+      </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>Aplicacion cinco, ADS</h4>
+ <center><img src="imagenes/mdpi.png" width="46" height="46"></center>
+  <h4>ALBERTO DE LOS SANTOS ROMERO </h4>
+</div>
+</div>
+</div> 
+</div>
+
+</body>
+</html>
